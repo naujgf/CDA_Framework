@@ -1,1 +1,0 @@
-# 04 Guiding Principles

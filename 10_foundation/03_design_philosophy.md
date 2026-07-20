@@ -1,1 +1,0 @@
-# 03 Design Philosophy
