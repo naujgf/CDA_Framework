@@ -1,68 +1,74 @@
 ---
-document_id: FW-002
+
+document_id: FW-001
 title: CDA Overview
-version: 1.4
+version: 2.0
 status: Approved
-cda_version: 1.4
+cda_version: 2.0
 owner: CDA Working Group
-last_updated: 2026-07-17
+last_updated: 2026-07-20
 
 relationships:
-  derives_from:
-  constrained_by:
-  references:
-    - FW-003
-    - FW-004
-  supersedes:
----
+derives_from:
+constrained_by:
+- FW-002
+- FW-003
+references:
+supersedes: FW-002 v1.4
+-----------------------
 
 # CDA Overview
 
 ## Purpose
 
-Introduce the Capability Documentation Architecture (CDA), explain the problems it addresses, define its scope, and provide the conceptual foundation required to understand the rest of the framework.
+Introduce the Capability Documentation Architecture (CDA), explain the problems it addresses, define its scope, and establish the conceptual foundation required to understand the remainder of the framework.
 
-## Scope of This Document
+---
 
-### Defines
+# Scope
 
-- What CDA is.
-- Why CDA exists.
-- The objectives of the framework.
-- The core concepts behind the framework.
-- The intended audience.
+## Defines
 
-### Does NOT define
+* What CDA is.
+* Why CDA exists.
+* The objectives of the framework.
+* The principles behind the knowledge model.
+* The intended audience.
+* The overall structure of the framework.
 
-- Framework axioms.
-- Documentation conventions.
-- Module specifications.
-- Project-specific documentation.
+## Does NOT define
+
+* Foundational concepts.
+* Core axioms.
+* Documentation practices.
+* Knowledge Domain specifications.
+* Project-specific documentation.
 
 ---
 
 # What is CDA?
 
-Capability Documentation Architecture (CDA) is a documentation framework designed to organize software knowledge into a structured, scalable and maintainable architecture.
+The **Capability Documentation Architecture (CDA)** is a **Reference Knowledge Model for Software Knowledge**.
 
-Rather than treating documentation as a collection of disconnected files, CDA treats documentation as a knowledge system. Every document has a clear purpose, every module answers a specific set of questions, and the complete documentation forms a coherent architecture that can evolve alongside the software it describes.
+Rather than defining how documentation should be written, CDA defines how software knowledge is classified, organized, owned, and related.
 
-CDA is technology-agnostic and can be applied to projects of different sizes, domains and implementation technologies.
+The framework provides a conceptual model that identifies the fundamental categories of software knowledge, establishes clear ownership boundaries between them, and enables software knowledge to evolve without ambiguity or unnecessary duplication.
+
+Documentation repositories, knowledge bases, wikis, Markdown files, documentation portals, and AI retrieval systems are implementations of the model rather than the model itself.
+
+CDA is independent of programming languages, software architectures, development methodologies, organizational structures, and documentation technologies.
 
 ---
 
 # Why CDA Exists
 
-Traditional documentation often suffers from common problems:
+Software systems generate many different kinds of knowledge throughout their lifecycle.
 
-- Information is duplicated across documents.
-- Documentation becomes outdated as projects evolve.
-- Architectural decisions are difficult to trace.
-- Knowledge is scattered throughout repositories.
-- AI assistants receive inconsistent or incomplete context.
-- New contributors struggle to understand where information belongs.
+Business objectives, requirements, domain models, architectures, interface agreements, implementation details, testing strategies, and design decisions are often documented independently, resulting in duplicated information, inconsistent terminology, unclear ownership, and fragmented understanding.
 
-CDA addresses these problems by providing a consistent architectural model for documentation.
+Traditional documentation approaches typically organize information according to documents or folders rather than according to the knowledge itself.
+
+CDA addresses this problem by treating software knowledge as a structured system with explicit categories, clear ownership boundaries, and well-defined relationships.
 
 ---
 
@@ -70,88 +76,113 @@ CDA addresses these problems by providing a consistent architectural model for d
 
 The objectives of CDA are to:
 
-- Organize documentation as a coherent knowledge architecture.
-- Separate stable knowledge from implementation details.
-- Improve traceability across the software lifecycle.
-- Reduce duplication and ambiguity.
-- Support incremental evolution of documentation.
-- Provide predictable navigation for both humans and AI assistants.
-- Enable documentation to scale together with the software it describes.
+* Provide a common conceptual model for organizing software knowledge.
+* Define clear ownership boundaries between different categories of knowledge.
+* Reduce ambiguity and unnecessary duplication.
+* Improve traceability throughout the software lifecycle.
+* Separate stable knowledge from volatile knowledge.
+* Enable documentation to evolve without losing conceptual consistency.
+* Support knowledge consumption by both humans and intelligent systems.
+* Remain independent of documentation technologies and software development methodologies.
 
 ---
 
-# Core Concepts
+# Fundamental Principles
 
-The framework is built around several fundamental concepts.
+The framework is built upon several guiding ideas.
 
-## Knowledge as a First-Class Asset
+## Software Knowledge Is the Primary Asset
 
-Knowledge is the primary asset managed by CDA.
+Software systems are ultimately understood through knowledge rather than through source code alone.
 
-Documentation is the medium through which knowledge is captured, organized and communicated.
-
-The architecture exists to preserve the integrity, discoverability and evolution of that knowledge.
+Documentation exists to represent software knowledge, but software knowledge exists independently of any document, repository, or documentation technology.
 
 ---
 
-## Documentation as Architecture
+## Knowledge Is Organized by Concept Rather Than by Document
 
-Documentation is not viewed as a folder containing documents.
+CDA organizes software knowledge into conceptual categories known as **Knowledge Domains**.
 
-Instead, documentation is organized as an architecture composed of modules, relationships and well-defined responsibilities.
+Each domain represents a distinct category of software knowledge and establishes a clear conceptual boundary for that knowledge.
 
-Each module addresses a distinct aspect of software knowledge.
-
----
-
-## Capability-Oriented Organization
-
-CDA organizes documentation according to capabilities rather than implementation artifacts.
-
-This allows documentation to remain stable even when implementation technologies change.
+Documents are simply one possible representation of knowledge and do not determine its ownership.
 
 ---
 
-## Evolution Through Governance
+## Every Category of Knowledge Has an Authoritative Owner
 
-The framework itself evolves through a governed process.
+Each category of software knowledge belongs to exactly one Knowledge Domain.
 
-Changes are proposed, reviewed, approved and incorporated into official framework releases.
+Other domains may reference that knowledge, but they do not redefine or duplicate it.
 
-This ensures that CDA remains consistent while continuously improving.
+This principle establishes a single source of truth throughout the framework.
+
+---
+
+## Knowledge Evolves Independently of Its Representation
+
+Software knowledge may be represented through Markdown files, diagrams, databases, documentation portals, knowledge graphs, or AI retrieval systems.
+
+The conceptual model defined by CDA remains unchanged regardless of how that knowledge is stored or presented.
+
+---
+
+## The Framework Evolves Through Governance
+
+CDA evolves through a controlled and transparent process.
+
+Framework improvements are proposed, reviewed, approved, and incorporated into official releases while preserving the stability of the underlying conceptual model.
 
 ---
 
 # Intended Audience
 
-CDA is designed for:
+CDA is intended for:
 
-- Software architects.
-- Technical leads.
-- Software engineers.
-- Documentation engineers.
-- AI-assisted development workflows.
-- Teams building long-lived software systems.
+* Software architects.
+* Technical leaders.
+* Software engineers.
+* Documentation engineers.
+* Enterprise architects.
+* AI-assisted software development workflows.
+* Teams building long-lived software systems.
+* Organizations seeking consistent software knowledge management.
 
 ---
 
 # Framework Structure
 
-The framework is currently organized into the following modules:
+The framework is organized into two complementary parts.
 
-- 00 Framework
-- 10 Foundation
-- 20 Requirements
-- 30 Domain
-- 40 Architecture
-- 50 Components
-- 60 API
-- 70 Data
-- 80 Implementation
-- 90 Decision Records
-- 100 Testing
+## Framework
 
-Each module answers a distinct set of questions and together they form a complete documentation architecture.
+The Framework defines the conceptual foundation of CDA, including:
+
+* Overview
+* Foundational Concepts
+* Core Axioms
+* Documentation Practices
+* Templates
+* Framework Governance
+
+---
+
+## Knowledge Domains
+
+The Knowledge Domains define the major categories of software knowledge:
+
+* Foundation
+* Requirements
+* Domain
+* Architecture
+* Components
+* Contracts
+* Data
+* Implementation
+* Testing
+* Decision Records
+
+Each Knowledge Domain answers one irreducible question about a software system and collectively they form a complete model of software knowledge.
 
 ---
 
@@ -159,11 +190,21 @@ Each module answers a distinct set of questions and together they form a complet
 
 CDA is independent of any individual software project.
 
-Projects adopt a specific version of the framework and organize their documentation according to its principles.
+Projects adopt a particular version of the framework and organize their software knowledge according to its concepts, axioms, and Knowledge Domains.
 
-The framework evolves independently from the projects that use it.
+Individual repositories may implement CDA using different documentation structures or technologies while remaining conceptually consistent with the framework.
 
 Projects indicate the framework version they conform to through the `cda_version` metadata field.
+
+---
+
+# Relationship with Documentation
+
+CDA does not prescribe a particular documentation technology or repository structure.
+
+Instead, it provides the conceptual model that documentation should represent.
+
+Documents, directories, repositories, knowledge bases, and documentation platforms are implementation choices that exist to capture and communicate software knowledge.
 
 ---
 
@@ -171,6 +212,7 @@ Projects indicate the framework version they conform to through the `cda_version
 
 After understanding the purpose and scope of CDA, continue with:
 
-1. CDA Axioms
-2. Documentation Conventions
-3. Foundation Module
+1. Foundational Concepts
+2. Core Axioms
+3. Documentation Practices
+4. Foundation Knowledge Domain
