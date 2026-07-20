@@ -204,9 +204,9 @@ Information models should provide a common understanding across teams.
 * Domain
 * Architecture
 * Components
-* API
+* Contracs
 
-The Data Knowledge Domain defines the information exchanged through APIs and managed by components.
+The Data Knowledge Domain defines the information exchanged through Contracts and managed by components.
 
 ---
 

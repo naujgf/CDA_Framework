@@ -107,7 +107,7 @@ Examples include:
 - Requirement decisions
 - Domain decisions
 - Architectural decisions
-- API decisions
+- Contracts decisions
 - Data decisions
 - Implementation decisions
 
@@ -209,7 +209,7 @@ If circumstances change, a new decision record should supersede the previous one
 - Domain
 - Architecture
 - Components
-- API
+- Contracts
 - Data
 - Implementation
 

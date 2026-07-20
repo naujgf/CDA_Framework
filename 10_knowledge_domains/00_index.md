@@ -28,7 +28,7 @@ Each domain specification defines:
 
     Architecture
     Components
-    API
+    Contracts
     Data
     Implementation
 
@@ -48,7 +48,7 @@ Projects should normally be understood in the following order:
 3. Domain
 4. Architecture
 5. Components
-6. API
+6. Contracts
 7. Data
 8. Implementation
 9. Decision Records
@@ -65,7 +65,7 @@ The Capability Documentation Architecture (CDA) organizes software knowledge int
 | **Domain**           | **What reality does the system model?**                | Describe **the business**, not the software.                 |
 | **Architecture**     | **How is the solution organized?**                     | Describe **structure**, not implementation.                  |
 | **Components**       | **What building blocks compose the solution?**         | Describe **responsibilities**, not code.                     |
-| **API**              | **How do systems communicate?**                        | Describe **contracts**, not implementations.                 |
+| **Contracts**        | **How do systems communicate?**                        | Describe **contracts**, not implementations.                 |
 | **Data**             | **What information is managed?**                       | Describe **information**, not storage technology.            |
 | **Implementation**   | **How is the solution realized?**                      | Describe **realization**, not historical decisions.          |
 | **Decision Records** | **Why were significant decisions made?**               | Describe **decision rationale**, not implementation details. |
@@ -91,7 +91,7 @@ Architecture
 Components
     │
     ▼
-API
+Contracts
     │
     ▼
 Data
@@ -116,7 +116,7 @@ This progression is intentional. Each Knowledge Domain answers one fundamental q
 | Domain           | What reality does the system model?                | Business Reality   | Software           |
 | Architecture     | How is the solution organized?                     | Structure          | Implementation     |
 | Components       | What building blocks compose the solution?         | Responsibilities   | Code               |
-| API              | How do systems communicate?                        | Contracts          | Implementations    |
+| Contracts        | How do systems communicate?                        | Contracts          | Implementations    |
 | Data             | What information is managed?                       | Information        | Storage Technology |
 | Implementation   | How is the solution realized?                      | Realization        | Rationale          |
 | Testing          | How do we verify the solution fulfills its intent? | Verification       | Debugging          |

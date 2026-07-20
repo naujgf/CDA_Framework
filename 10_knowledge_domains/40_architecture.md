@@ -209,7 +209,7 @@ Architecture translates business understanding into a solution structure.
 ## Provides Context To
 
 * Components
-* API
+* Contracts
 * Data
 * Implementation
 * Decision Records

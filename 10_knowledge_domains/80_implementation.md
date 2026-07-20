@@ -206,7 +206,7 @@ The focus is on delivering and operating working software.
 - Domain
 - Architecture
 - Components
-- API
+- Contracts
 - Data
 
 Implementation realizes every previous Knowledge Domain.
@@ -269,7 +269,7 @@ The Implementation Knowledge Domain should not contain:
 - Domain concepts
 - Architectural rationale
 - Component responsibilities
-- API contracts
+- Contracts
 - Information models
 - Decision rationale
 - Test results

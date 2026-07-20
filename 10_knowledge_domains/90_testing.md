@@ -137,7 +137,7 @@ Examples include:
 
 - Requirements coverage
 - Component coverage
-- API coverage
+- Contracts coverage
 - Data validation coverage
 - Implementation coverage
 
@@ -204,7 +204,7 @@ Verification should evolve alongside the software solution.
 - Domain
 - Architecture
 - Components
-- API
+- Contracts
 - Data
 - Implementation
 
